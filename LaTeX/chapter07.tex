@@ -1,0 +1,78 @@
+\section{Progetto}
+Occorre sempre tener conto del \textit{contesto d'uso} dell'utente destinatario dell'applicativo. \\
+Per esempio, l'utente di un dispositivo mobile sar\`a in movimento, non concentrato a lungo, esegue i compiti nei ritagli di tempo ed \`e frequentemente interrotto. Esiste la possibilit\`a che venga richiesta l'attenzione contemporaneamente da pi\`u attivit\`a.
+
+\paragraph{Differenze rispetto al desktop}
+\begin{itemize}
+	\item schermo piccolo;
+	\item memoria limitata;
+	\item una schermata alla volta;
+	\item un'applicazione alla volta;
+	\item help minimale.
+\end{itemize}
+
+\section{Stili}
+Esistono tre tipi di applicazione mobile:
+\begin{enumerate}
+	\item \textit{productivity application}: permette di svolgere compiti basati sulla organizzazione e manipolazione di informazioni dettagliate e la \textit{user experience} \`e basata sul task. I dati vengono organizzati gerarchicamente, spesso in lista, dove \`e possibile aggiungere e rimuovere elementi e/o scendere a livelli di dettaglio successivi. Esempio: applicazione \textit{email}.
+	\item \textit{utility application}: esegue un task semplice che richiede poco input dall'utente, legge informazioni essenziali su qualche argomento o verifica lo stato di qualcosa. D\`a poche informazioni senza struttura gerarchica. Utilizza una o pi\`u liste, ma non legate gerarchicamente. D\`a la possibilit\`a di cambiare configurazione frequentemente. Esempio: applicazione \textit{meteo}.
+	\item \textit{immersive application}: utilizzata per compiti che presentano ambienti particolari, che non mostrano grandi quantit\`a di testo e richiedono l'attenzione continuata dell'utente. Hanno spesso interfacce molto ricche, sono a tutto schermo e focalizzate sul contenuto e sull'esperienza di quel contenuto. Non usano controlli standard, ma ne crea di propri. Usa spesso grandi quantit\`a di dati, ma li mostra in modo particolare nel contesto. Esempio: \textit{giochi}.
+\end{enumerate}
+
+\section{Android}
+\begin{itemize}
+	\item \textit{gesture} standard:
+	\begin{itemize}
+		\item \textit{pinch open}
+		\item \textit{pinch closed}
+	\end{itemize}
+	\item \textit{metaphores} (switch);
+	\item non nascondere controllli, utillizare \textit{swipe};
+	\item \textit{back} button;
+	\item \textit{cancel} nei modal;
+	\item \textit{progress bars}:
+	\begin{itemize}
+		\item \textit{determinate}
+		\item \textit{indeterminate}
+		\item \textit{buffer}
+		\item \textit{query indeterminate and determinate}
+	\end{itemize}
+	\item suggerimenti;
+	\item customizzazione;
+	\item temi;
+	\item \textit{material design}:
+	\begin{itemize}
+		\item \textit{app bar}
+		\item \textit{floating action button}
+		\item \textit{card}
+		\item \textit{lists}
+		\item \textit{alerts}
+		\item \textit{bottom sheets}
+	\end{itemize}
+\end{itemize}
+
+\section{iOS}
+\begin{itemize}
+	\item posticipare il \textit{sign-in} il pi\`u possibile
+	\item minimizzare il \textit{data entry}
+	\item non associare azioni non standard a gesti standard
+	\item \textit{branding} con logo, non invasivo e coerente in tutta l'app
+	\item \textit{3D touch} (pressione sul touch screen): mostrare un menu, del contenuto aggiuntivo, una preview, un'animazione, \ldots.
+	\begin{itemize}
+		\item pressione leggera: preview;
+		\item pressione forte: \textit{pop} (accesso all'item) + vibrazione;
+		\item swipe verso l'alto: menu (\textit{action buttons}).
+	\end{itemize}
+	\item notifiche (locali o \textit{push}), arricchite con titolo, testo, suono. Con badge e payload;
+	\item \textit{widget}, per mostrare informazioni o funzionalit\`a essenziali dell'app;
+	\item \textit{Siri}, definire i tastk supportati, validare l'input, eseguire i task e restituire un feedback.
+	\item \textit{status bar}: mostra lo stato corrente, con progress indeterminato per le attivit\`a di rete;
+	\item \textit{navigation bar}: in alto. Mostra titolo, pulsante back e alcuni \textit{segmented controls};
+	\item \textit{toolbar}: contiene bottoni o label per azioni rilevanti nella lista corrente. Max 5 icone o max 3 label di testo;
+	\item \textit{tab bar}: per navigare nelle diverse sezioni. Massimo 5 tab, poi \textit{more}, con icona custom e un label;
+	\item \textit{tabelle}: mostrano contenuto, utili per la navigazione. Ogni riga ha un \textit{title} e un \textit{subtitle} (facoltativo) e possono essere formattate in diversi modi. Possono essere \textit{plain} o \textit{grouped};
+	\item \textit{alerts}: asincroni, con messaggi brevi da parte del sistema, con 1+ bottoni e di fronte ai quali l'utente deve prendere una decisione;
+	\item \textit{action sheets}: sollecitati dall'utente, dal basso una lista di azioni disponibili e \textit{annulla};
+	\item \textit{activity views}: per eseguire un task utile nel contesto attuale, come la \textit{condivisione};
+	\item \textit{controls}: tipi di input, come il seleziona data, il control di \textit{cut/paste/copy}, i tipi di tastiera (numerica, o alfanumerica, \ldots).
+\end{itemize}

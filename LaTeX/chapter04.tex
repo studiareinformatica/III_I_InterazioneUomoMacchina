@@ -1,0 +1,48 @@
+\section{Valutazione}
+Per fare una valutazione occorre fare delle simulazioni, realizzare dei prototipi ed avere una implementazione completa, cos\`i da permettere l'esecuzione di test di utilizzabilit\`a e funzionalit\`a del sistema. Viene effettuata in laboratorio, sul campo o in collaborazione con utenti, e si valuta sia il design che l'implementazione. \\
+Il fine ultimo della valutazione \`e s\`i la possibilit\`a di individuare problemi specifici, ma anche di stimare l'effettiva funzionali\`a e l'impatto dell'interfaccia sull'utente.
+
+\subsection{Valutazione mediante la partecipazione degli utenti}
+I partecipanti sono rappresentativi degli utenti, e devono aver un livello di esperienza simile ed omogeneo nel campo proposto dall'applicativo. \textit{J. Nielsen} suggerisce un numero di partecipanti compreso tra 3 e 5. \\
+Lo scenario descrive una situazione potenzialmente reale nella quale si immedesimano i partecipanti alla valutazione, cos\`i da individuare utenti, azioni, strumenti da usare e contesti. I task sono i singoli compiti svolti dai partecipanti, oppure \`e possibile svolgere valutazioni di uso libero del sistema, senza task.
+
+\subsection{Valutazioni in laboratorio}
+Situazione in cui viene ricostruito un contesto non interrompibile. Il laboratorio sar\`a diviso in tre parti:
+\begin{enumerate}
+	\item \textit{sala utente}: dove l'utente effettuer\`a i test, ripreso da diverse telecamere;
+	\item \textit{sala team}: contiene i monitor raffiguranti l'oggetto di ripresa delle telecamere della \textit{sala utente} e la \textit{logging station};
+	\item \textit{sala esecutivi}: dove gli esecutivi osservano l'operazione attraverso le finestre delle altre due sale.
+\end{enumerate}
+
+\subsection{Valutazioni sul campo}
+Si lavora in un contesto naturale e che rappresenti quello richiesto dall'applicativo, col costo di eccessive distrazioni e rumori. \\
+In questo caso viene richiesto all'utente di ragionare ad alta voce, di eseguire valutazioni cooperative e di fare considerazioni a seguito dell'esecuzione dei task. Chi richiede la valutazione prende nota, registra o riprende l'utente, cos\`i da permettere la raccolta di informazioni sensibili.
+
+\section{Valutazione sperimentale}
+Utilizzata per analizzare aspetti specifici del comportamento contestualizzato all'interazione. \\
+Vengono scelti dei fattori: il soggetto, le variabli (gli elementi da modificare e misurare), l'ipotesi (un'idea provvisoria il cui valore deve essere accertato) e un \textit{experimental design} (la modalit\`a attraverso cui stai facendo questa valutazione).
+Le variabli possono essere:
+\begin{itemize}
+	\item \textit{indipendenti} (\textit{IV}): caratteristiche che vengono cambiate per produrre diverse condizioni (cambiamento dello stile delle interfacce, ilnumero degli elementi di un menu, \ldots);
+	\item \textit{dipendenti} (\textit{DV}): caratteristiche misurate nell'esperimento (tempo impiegato, numero di errori, \ldots).
+\end{itemize}
+L'ipotesi rappresenta la predizione che una variazione delle variabili indipendenti causer\`a una differenza nelle variabli dipendenti. Se non viene fornita ipotesi, si richiede indirettamente di verificare che non ci sar\`a mai differenza alcuna tra le variabili dipendenti raccolte. \\
+Con l'\textit{experimental design} viene scelta un'ipotesti, le variabili dipendenti e indipendenti, i partecipanti ed una modalit\`a tra la \textit{between subjects} e la \textit{within subjects}.
+Le condizioni sono, appunto, condizioni di controllo, dove la condizione sperimentale prevede venga modificata una \textit{IV} rispetto alla condizione di controllo (utile per assicurarsi che \`e il cambiamento della \textit{IV} il responsabile del cambiamento misurato nelle \textit{DV}).
+\begin{itemize}
+	\item \textit{between subjects}: ad ogni partecipante viene assegnata una sola delle condizioni, e quindi svolger\`a il test una sola volta. Ovviamente richiede la presenza di pi\`u partecipanti;
+	\item \textit{within subjects}: ad ogni partecipante vengono assegnate tutte le condizioni, e quindi esegue il test 2 o pi\`u volte. Richiede meno partecipanti e risulta quindi meno costoso.
+\end{itemize}
+I dati (le \textit{DV}) vengono poi raccolti su grafici e ne viene fatta un'analisi statistica.
+
+\paragraph{Outline}
+\`E quindi di fondamentale importanza valutare frequentemente durante lo sviluppo, cos\`i da ridurre i costi di correzione. Per ridurre i costi di valutazione con utenti \`e possibile anche farle senza, focalizzandosi su aspetti specifici che possono causare difficolt\`a (sono valutazioni limitate, perch\`e non valutano il vero uso del sistema, ma solo la sua aderenza a principi conosciuti).
+
+\subsection{Valutazione esperta}
+Esistono quattro tipi:
+\begin{enumerate}
+	\item \textit{cognitive walthrough}: proposta da \textit{Polson et al.} nel 1992, valuta il design circa il suo supporto all'utente nell'imparare i task e quindi quanto \`e facile apprendere.
+	\item \textit{heuristic evaluation}: proposta da \textit{J. Nielsen} e \textit{R. Molich} nel 1994, guida le decisioni attraverso la risposta a 10 euristiche: \textit{visibilit\`a dello stato di sistema}, \textit{corrispondenza tra il mondo reale e il sistema}, \textit{libert\`a di controllo da parte degli utenti}, \textit{coerenza e standard}, \textit{prevenzione degli errori}, \textit{riconoscere piuttosto che ricordare}, \textit{flessibilit\`a ed efficienza d'uso}, \textit{design minimalista ed estetico}, \textit{aiutare gli utenti a riconoscere, diagnosticare e correggere gli errori} e \textit{guida e documentazione}.
+	\item \textit{model-based evaluation}: vengono utilizzati modelli esistenti per valutare l'interazione: \textit{GOMS} (modello di previsione delle performance dell'utente con un'interfaccia), \textit{KLM} (modello di previsione dei tempi necessari per compiti fisici di basso livello, come uso tastiera e mouse), \textit{dialog models} (per valutare le sequenze dei dialoghi, stati irraggiungibili, dialoghi circolari, \ldots).
+	\item \textit{review-based evaluation}: vengono raccolte le informazioni dagli studi precedenti ed incrociate per supportare o rifiutare parti di design.
+\end{enumerate}
